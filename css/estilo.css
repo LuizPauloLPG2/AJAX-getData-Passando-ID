@@ -1,0 +1,54 @@
+table{
+    width: 100%;
+}
+table a{
+    text-decoration: none;
+    font-weight: bold;
+}
+table a:hover{
+    text-decoration: underline;
+}
+.edt a{
+    color: #138496;
+}
+.del a{
+    color: #c82333;
+}
+table td{
+    border-bottom: solid 1px #000;
+}
+.thread td{
+}
+table td{
+    border: solid 1px #F5F5F5;
+}
+.form{
+    width: 1024px;
+    margin: 0 auto;
+}
+.content{
+    margin: 0 auto;
+    width: 1024px;
+    /*overflow-x: hidden;*/
+    /*height: 220px;*/
+    /*border: solid 1px #191919;*/
+}
+@media (max-width:960px){
+    table td{
+        font-size: 10px;
+    }
+    .content{
+        width: 400px;
+    }
+    .form{
+        width: 400px;        
+    }
+    .form input, .form button{
+        font-size: 10px;
+    }
+}
+@media (max-width:960px){
+    .td-email{
+        display: none;
+    }
+}
