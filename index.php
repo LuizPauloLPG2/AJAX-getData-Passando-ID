@@ -63,7 +63,7 @@
                         <td><?php echo $row['nome_profissional']; ?></td>
                         <td><?php echo $row['login']; ?></td>
                         <td>
-                            <button data-id="<?php echo $row['id_profissional']; ?>" type="button" class="btn btn-primary btn-sm setIdCliente" data-toggle="modal" data-target="#exampleModal">
+                            <button data-id="<?php echo $row['id_profissional']; ?>" type="button" class="btn btn-primary btn-sm setIdFuncionario" data-toggle="modal" data-target="#exampleModal">
                                 Detalhes
                             </button>
                         </td>
