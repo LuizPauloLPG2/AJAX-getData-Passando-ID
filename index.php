@@ -9,7 +9,7 @@
         <div class="container">
             <h1><code>AJAX</code></h1>
             <hr class="border border-primary">
-            <h2>CLIENTES</h2>
+            <h2>FUNCIONÁRIOS</h2>
             <hr class="border border-primary">
             <table class="table table-sm table-hover table-striped">
                 <thead>
