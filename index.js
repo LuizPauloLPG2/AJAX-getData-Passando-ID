@@ -1,16 +1,17 @@
 $(document).ready(function () {
     $(".setIdFuncionario").on("click", function () {
-        var id = this.dataset.id;
+        var id = $(this).data('id');
         $.ajax({
             url: 'ajax.php',
+            method: 'POST',
             data: {
                 id: id
-            }
-        }).done(function (request) {
-            funcionario = JSON.parse(request);
-            $("#nome_profissional").val(funcionario.nome_profissional);
-            $("#email_profissional").val(funcionario.login);
-            
+            },
+            success: res => {
+                funcionario = JSON.parse(res);
+                $("#nome_profissional").val(funcionario.nome_profissional);
+                $("#email_profissional").val(funcionario.login);
+            });
         });
     });
 });
